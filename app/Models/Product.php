@@ -45,4 +45,11 @@ class Product extends Model
     {
         return $this->belongsTo(City::class);
     }
+
+    public function conversations()
+    {
+        return $this->hasMany(
+            Conversation::class
+        );
+    }
 }

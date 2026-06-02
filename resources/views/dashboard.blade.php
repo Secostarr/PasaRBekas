@@ -39,11 +39,9 @@
             <div class="col-md-4">
                 <div class="card border-0 shadow h-100">
                     <div class="card-body text-center">
-
                         <h5 class="card-title">
                             Tambah Produk
                         </h5>
-
                         <h1 class="display-4">
                             ➕
                         </h1>
@@ -51,14 +49,12 @@
                         <p>
                             Jual barang bekas Anda
                         </p>
-
                         <a
                             href="{{ route('products.create') }}"
                             class="btn btn-success"
                         >
                             Tambah Barang
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -66,11 +62,9 @@
             <div class="col-md-4">
                 <div class="card border-0 shadow h-100">
                     <div class="card-body text-center">
-
                         <h5 class="card-title">
                             Marketplace
                         </h5>
-
                         <h1 class="display-4">
                             🛒
                         </h1>
@@ -85,24 +79,19 @@
                         >
                             Jelajahi
                         </a>
-
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="card border-0 shadow mt-5">
             <div class="card-body">
-
                 <h4>
                     Selamat Datang di PasarBekas 👋
                 </h4>
-
                 <p class="text-muted">
                     Platform jual beli barang bekas yang mudah dan aman.
                 </p>
-
             </div>
         </div>
 

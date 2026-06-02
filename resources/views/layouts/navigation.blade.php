@@ -23,9 +23,14 @@
                             Dashboard
                         </a>
 
-                        <a href="{{ route('products.index') }}"
+                        <a href="{{ route('products.my') }}"
                            class="text-decoration-none text-dark fw-semibold">
                             Produk Saya
+                        </a>
+
+                        <a href="{{ route('chat.index') }}"
+                           class="text-decoration-none text-dark fw-semibold">
+                            💬 Chat
                         </a>
                     @endauth
                 </div>

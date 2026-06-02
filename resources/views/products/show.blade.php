@@ -98,7 +98,37 @@
                         </tr>
 
                     </table>
+                    
+                    @auth
+                        @if(auth()->id() != $product->user_id)
+                            <div class="d-grid gap-2">
+                                <form
+                                    action="{{ route('chat.start', $product->id) }}"
+                                    method="POST"
+                                >
+                                    @csrf
 
+                                    <button
+                                        type="submit"
+                                        class="btn btn-success btn-lg w-100"
+                                    >
+                                        💬 Chat Penjual
+                                    </button>
+                                </form>
+                            </div>
+                        @else
+                            <div class="alert alert-info text-center mb-0">
+                                📦 Ini adalah produk Anda sendiri.
+                            </div>
+                        @endif
+                    @else
+                        <a
+                            href="{{ route('login') }}"
+                            class="btn btn-success btn-lg w-100"
+                        >
+                            Login untuk Chat Penjual
+                        </a>
+                    @endauth
                 </div>
 
             </div>
